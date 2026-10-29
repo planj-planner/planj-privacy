@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>플랜J 개인정보처리방침</title>
+<style>
+  :root {
+    --bg: #fffaf5;
+    --fg: #2b2623;
+    --muted: #6f655e;
+    --accent: #c2410c;
+    --line: #eadfd5;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1815;
+      --fg: #f1ebe5;
+      --muted: #b3a79d;
+      --accent: #fb923c;
+      --line: #3a322c;
+      --card: #25201c;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+  main { max-width: 40rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+  h1 { font-size: 1.6rem; line-height: 1.3; margin: 0 0 0.5rem; }
+  h2 { font-size: 1.1rem; margin: 2rem 0 0.5rem; color: var(--accent); }
+  p { margin: 0.5rem 0; }
+  ul { margin: 0.5rem 0; padding-left: 1.25rem; }
+  li { margin: 0.35rem 0; }
+  .meta { color: var(--muted); font-size: 0.9rem; }
+  .lead {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 0.9rem 1rem;
+    margin: 1.25rem 0 0;
+  }
+  a { color: var(--accent); }
+  code { font-family: ui-monospace, Consolas, monospace; font-size: 0.92em; }
+</style>
+</head>
+<body>
+<main>
+  <h1>플랜J 개인정보처리방침</h1>
+  <p class="meta">앱 이름: 플랜J<br>시행일: 2026년 10월 30일<br>문의: <a href="mailto:jplan.kr@gmail.com">jplan.kr@gmail.com</a></p>
+
+  <p class="lead">플랜J는 개인정보를 수집하지 않고, 서버로 보내지도 않습니다. 여행 데이터는 사용자의 기기 안에만 저장됩니다.</p>
+
+  <h2>1. 수집하는 정보</h2>
+  <ul>
+    <li>계정과 로그인이 없습니다. 이름, 이메일, 전화번호 같은 정보를 묻지 않습니다.</li>
+    <li>여행 제목, 일정, 장소, 경비 같은 데이터는 기기 안에만 저장됩니다. 개발자나 다른 누구에게도 보내지 않습니다.</li>
+    <li>광고와 분석 도구, 오류 수집 도구를 쓰지 않습니다.</li>
+  </ul>
+
+  <h2>2. 앱이 보내는 외부 요청</h2>
+  <ul>
+    <li>환율 조회: 여행을 만들거나 고치는 화면에서 환율을 채울 때 <code>open.er-api.com</code>에서 원화 기준 환율표를 받아옵니다. 이 요청에는 여행 데이터나 통화 코드, 개인정보를 담지 않습니다. 다만 인터넷 요청의 특성상 이 서비스는 기기의 IP 주소를 볼 수 있습니다. 환율 서비스의 정책은 해당 서비스를 따릅니다.</li>
+    <li>환율 출처 링크: 화면의 <code>www.exchangerate-api.com</code> 링크는 사용자가 누를 때만 브라우저로 열립니다.</li>
+    <li>지도 버튼: 누르면 구글 지도 앱이나 웹(<code>www.google.com</code>)이 열립니다. 이때 사용자가 적은 장소 이름이 구글 지도로 넘어갑니다. 이후 처리는 구글의 개인정보처리방침을 따릅니다.</li>
+    <li>글꼴은 앱 안에 들어 있어서 글꼴 때문에 외부로 나가는 요청은 없습니다.</li>
+  </ul>
+
+  <h2>3. 클립보드</h2>
+  <p>사용자가 버튼을 누를 때만 클립보드를 읽거나 씁니다. 붙여넣기 버튼은 클립보드를 읽고, 템플릿 복사와 공유 복사 버튼은 클립보드에 씁니다. 그 밖의 때에는 클립보드에 접근하지 않습니다. 읽은 내용은 입력칸에 채우는 데만 쓰며 어디로도 보내지 않습니다.</p>
+
+  <h2>4. 공유와 백업 파일</h2>
+  <p>공유하거나 백업한 내용은 사용자가 고른 앱(카카오톡, 드라이브 등)이나 기기의 문서 폴더로만 갑니다. 플랜J가 이 내용을 따로 전송하지는 않습니다. 다른 앱으로 넘어간 뒤의 처리는 그 앱의 정책을 따릅니다.</p>
+
+  <h2>5. 권한</h2>
+  <ul>
+    <li>인터넷: 환율을 받아오는 데 씁니다.</li>
+    <li>저장소 쓰기: 안드로이드 10 이하에서만 요청합니다. 백업 파일을 기기에 저장할 때 씁니다. 안드로이드 11 이상에서는 필요하지 않습니다.</li>
+  </ul>
+
+  <h2>6. 데이터 삭제</h2>
+  <p>데이터가 기기에만 있어서 개발자가 지울 수 있는 정보가 없습니다. 앱을 삭제하면 기기의 여행 데이터도 함께 지워집니다. 공유하거나 백업해 둔 파일은 사용자가 직접 지워야 합니다.</p>
+
+  <h2>7. 아동</h2>
+  <p>플랜J는 만 18세 이상 성인을 위한 앱입니다. 아동을 대상으로 하지 않습니다.</p>
+
+  <h2>8. 방침이 바뀔 때</h2>
+  <p>내용이 바뀌면 이 페이지에 알리고 시행일을 고칩니다.</p>
+
+  <h2>9. 문의</h2>
+  <p>궁금한 점은 <a href="mailto:jplan.kr@gmail.com">jplan.kr@gmail.com</a>으로 보내 주세요.</p>
+</main>
+</body>
+</html>
